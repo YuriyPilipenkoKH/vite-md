@@ -34,7 +34,7 @@ export const buttonStyles =css`
   }
 `
 
-export const ripple=css`
+ const ripple=css`
 &:after {
   content: '';
   position: absolute;
@@ -113,7 +113,7 @@ export const StyledArrowButton = styled.button`
   cursor: pointer;
 `;
 
-export const flatBtnStyles =css`
+ const flatBtnStyles =css`
  display: flex;
   align-items: center;
   justify-content: center;
