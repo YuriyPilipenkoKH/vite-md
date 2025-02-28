@@ -48,8 +48,8 @@ const MainModal: React.FC<MainModalProps> = () => {
             : 'modal-backdrop'
             }`}>
           <ModalContainer className='ModalContainer'>
-            <p> {'lang.appTitle' } </p>
-            <p> {'lang.updateInfo'} </p>
+            <p> {'Modal.Title' } </p>
+            <p> {'modal.updateInfo'} </p>
 
           </ModalContainer>
         </ModalOverlay>

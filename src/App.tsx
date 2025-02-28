@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { useModalStore } from './store/useModalStore'
 import MainModal from './components/modals/MainModal'
+import ThemeChanger from './components/button/ThemeChanger'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <ThemeChanger/>
       <h1>Vite + React</h1>
       <div className="card flex flex-col gap-5">
         <button onClick={() => setCount((count) => count + 1)}>
