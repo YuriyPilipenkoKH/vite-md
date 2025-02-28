@@ -1,7 +1,7 @@
 import React, { useEffect, } from 'react'
 import { createPortal } from 'react-dom';
 import { useModalStore } from '../../store/useModalStore';
-
+import { ModalContainer, ModalOverlay } from './MainModal.styled';
 
 
 
@@ -41,18 +41,18 @@ const MainModal: React.FC<MainModalProps> = () => {
     if (!modalRoot) return null;
     return createPortal(
    
-        <div
+        <ModalOverlay
           className={`modal ModalOverlay  ${
           modalIsOpen
             ? ['active', 'modal-backdrop'].join(' ')
             : 'modal-backdrop'
             }`}>
-          <div className='ModalContainer'>
+          <ModalContainer className='ModalContainer'>
             <p> {'lang.appTitle' } </p>
             <p> {'lang.updateInfo'} </p>
 
-          </div>
-        </div>
+          </ModalContainer>
+        </ModalOverlay>
       ,
       modalRoot
     )
